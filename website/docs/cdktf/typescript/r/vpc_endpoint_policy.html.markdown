@@ -79,23 +79,23 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `vpcEndpointId` - (Required) The VPC Endpoint ID.
 * `policy` - (Optional) A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `gateway` and some `interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC endpoint.
 
 ## Import
 
-VPC Endpoint Policies can be imported using the `id`, e.g.
+Import VPC Endpoint Policies using the `id`. For example:
 
 ```
 $ terraform import aws_vpc_endpoint_policy.example vpce-3ecf2a57
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-3a90315252cb0c2192557dcc0d4e28610e74220ecb2a239feb097742fa1a7fa3 -->
+<!-- cache-key: cdktf-0.17.1 input-2709472a3ec0e587105a3d0f125a04dd5a8e5908d417dd260ab94c9d11aac313 -->

@@ -69,7 +69,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `acceptanceRequired` - (Required) Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - `true` or `false`.
 * `allowedPrincipals` - (Optional) The ARNs of one or more principals allowed to discover the endpoint service.
@@ -79,9 +79,9 @@ The following arguments are supported:
 * `privateDnsName` - (Optional) The private DNS name for the service.
 * `supportedIpAddressTypes` - (Optional) The supported IP address types. The possible values are `ipv4` and `ipv6`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC endpoint service.
 * `availabilityZones` - A set of Availability Zones in which the service is available.
@@ -100,10 +100,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-VPC Endpoint Services can be imported using the `VPC endpoint service id`, e.g.,
+Import VPC Endpoint Services using the `VPC endpoint service id`. For example:
 
 ```
 $ terraform import aws_vpc_endpoint_service.foo vpce-svc-0f97a19d3fa8220bc
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-d8ef0dd3055ab4703bb6e72fe79f4b8eb534a0b42292e1e8c9a2ada579470665 -->
+<!-- cache-key: cdktf-0.17.1 input-b81b621be75788f2ff9d26b3e827168b8a7eaeedeb8fab53a9e6ef3f7f4e3e86 -->
