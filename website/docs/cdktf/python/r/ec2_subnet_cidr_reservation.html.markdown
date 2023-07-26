@@ -35,26 +35,26 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `cidr_block` - (Required) The CIDR block for the reservation.
 * `reservation_type` - (Required) The type of reservation to create. Valid values: `explicit`, `prefix`
 * `subnet_id` - (Required) The ID of the subnet to create the reservation for.
 * `description` - (Optional) A brief description of the reservation.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - ID of the CIDR reservation.
 * `owner_id` - ID of the AWS account that owns this CIDR reservation.
 
 ## Import
 
-Existing CIDR reservations can be imported using `SUBNET_ID:RESERVATION_ID`, e.g.,
+Import Existing CIDR reservations using `SUBNET_ID:RESERVATION_ID`. For example:
 
 ```
 $ terraform import aws_ec2_subnet_cidr_reservation.example subnet-01llsxvsxabqiymcz:scr-4mnvz6wb7otksjcs9
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-068d78a5a45794a8e8dfb5699785f8dd8fbaf725814c393dab988a122183fd6d -->
+<!-- cache-key: cdktf-0.17.1 input-de24521dc4a4a469e9f85c57a1b317acc28780364fe23698c4ff03c77f1b9114 -->

@@ -52,9 +52,9 @@ The following arguments are optional:
 * `waitForCompletion` - (Optional) If enabled, the resource will wait for the Network Insights Analysis status to change to `succeeded` or `failed`. Setting this to `false` will skip the process. Default: `true`.
 * `tags` - (Optional) Map of tags to assign to the resource. If configured with a provider [`defaultTags` configuration block](/docs/providers/aws/index.html#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `alternatePathHints` - Potential intermediate components of a feasible path. Described below.
 * `arn` - ARN of the Network Insights Analysis.
@@ -76,10 +76,10 @@ The `alternatePathHints` object supports the following:
 
 ## Import
 
-Network Insights Analyses can be imported using the `id`, e.g.,
+Import Network Insights Analyses using the `id`. For example:
 
 ```
 $ terraform import aws_ec2_network_insights_analysis.test nia-0462085c957f11a55
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-6c52a3f45a5c53a101825e5d344e7a38516ecb14af919feddb6511f6632e0f4a -->
+<!-- cache-key: cdktf-0.17.1 input-788aa0a84f4a49ca782e57f51ecc0d0913108371437af3cc9756b38ffd0571c1 -->
