@@ -70,9 +70,9 @@ The following arguments are optional:
 * `skipDestroy` - (Optional) Whether to retain the old version of a previously deployed Lambda Layer. Default is `false`. When this is not set to `true`, changing any of `compatibleArchitectures`, `compatibleRuntimes`, `description`, `filename`, `layerName`, `licenseInfo`, `s3Bucket`, `s3Key`, `s3ObjectVersion`, or `sourceCodeHash` forces deletion of the existing layer version and creation of a new layer version.
 * `sourceCodeHash` - (Optional) Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3Key`. The usual way to set this is `${filebase64Sha256("fileZip")}` (Terraform 0.11.12 or later) or `${base64Sha256(file("fileZip"))}` (Terraform 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - ARN of the Lambda Layer with version.
 * `createdDate` - Date this resource was created.
@@ -89,7 +89,7 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Lambda Layers can be imported using `arn`.
+Import Lambda Layers using `arn`. For example:
 
 ```
 $ terraform import \
@@ -97,4 +97,4 @@ $ terraform import \
     arn:aws:lambda:_REGION_:_ACCOUNT_ID_:layer:_LAYER_NAME_:_LAYER_VERSION_
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-793280b3e1921880f3e1d6e8ed6a4a0ef581b2fcbbde6e01ff7c348750383650 -->
+<!-- cache-key: cdktf-0.17.1 input-755ef4780c7d36e3aa92e2a89ccc0f2f02950c9c74fa1e9b5ceb94260dac8408 -->

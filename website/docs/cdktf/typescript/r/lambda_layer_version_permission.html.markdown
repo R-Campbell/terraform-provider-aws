@@ -44,7 +44,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `action` - (Required) Action, which will be allowed. `lambda:getLayerVersion` value is suggested by AWS documantation.
 * `layerName` (Required) The name or ARN of the Lambda Layer, which you want to grant access to.
@@ -54,9 +54,9 @@ The following arguments are supported:
 * `versionNumber` (Required) Version of Lambda Layer, which you want to grant access to. Note: permissions only apply to a single version of a layer.
 * `skipDestroy` - (Optional) Whether to retain the old version of a previously deployed Lambda Layer. Default is `false`. When this is not set to `true`, changing any of `compatibleArchitectures`, `compatibleRuntimes`, `description`, `filename`, `layerName`, `licenseInfo`, `s3Bucket`, `s3Key`, `s3ObjectVersion`, or `sourceCodeHash` forces deletion of the existing layer version and creation of a new layer version.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The `layerName` and `versionNumber`, separated by a comma (`,`).
 * `revisionId` - A unique identifier for the current revision of the policy.
@@ -64,7 +64,7 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Lambda Layer Permissions can be imported using `layerName` and `versionNumber`, separated by a comma (`,`).
+Import Lambda Layer Permissions using `layerName` and `versionNumber`, separated by a comma (`,`). For example:
 
 ```sh
 $ terraform import aws_lambda_layer_version_permission.example arn:aws:lambda:us-west-2:123456654321:layer:test_layer1,1
@@ -72,4 +72,4 @@ $ terraform import aws_lambda_layer_version_permission.example arn:aws:lambda:us
 
 [1]: https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-xaccountlayer
 
-<!-- cache-key: cdktf-0.17.1 input-e17fb8a2f27ae98234d6c88e2e705537e9e65b38869eca7f9d0bce557958b91e -->
+<!-- cache-key: cdktf-0.17.1 input-143c74ae0179b24b73ea00924df6ba77b9bb25caf9529b30bf98a90790d634d9 -->
