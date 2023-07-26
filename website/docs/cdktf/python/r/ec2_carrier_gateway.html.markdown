@@ -36,14 +36,14 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `tags` - (Optional) A map of tags to assign to the resource. If configured with a provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 * `vpc_id` - (Required) The ID of the VPC to associate with the carrier gateway.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - The ARN of the carrier gateway.
 * `id` - The ID of the carrier gateway.
@@ -52,11 +52,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`aws_ec2_carrier_gateway` can be imported using the carrier gateway's ID,
-e.g.,
+Import `aws_ec2_carrier_gateway` using the carrier gateway's ID. For example:
 
 ```
 $ terraform import aws_ec2_carrier_gateway.example cgw-12345
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-69fb2719765f13af292ecd34e9026074198e61b364e7f0845c2b65af0b9641db -->
+<!-- cache-key: cdktf-0.17.1 input-f3a8a1d6b3d096186e514bc1f7b8d32926377414e7cfb8c63decde1c082072a2 -->
