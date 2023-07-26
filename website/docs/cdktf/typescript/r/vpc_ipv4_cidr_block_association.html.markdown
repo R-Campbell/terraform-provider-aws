@@ -44,16 +44,16 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `cidrBlock` - (Optional) The IPv4 CIDR block for the VPC. CIDR can be explicitly set or it can be derived from IPAM using `ipv4NetmaskLength`.
 * `ipv4IpamPoolId` - (Optional) The ID of an IPv4 IPAM pool you want to use for allocating this VPC's CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts. Using IPAM you can monitor IP address usage throughout your AWS Organization.
 * `ipv4NetmaskLength` - (Optional) The netmask length of the IPv4 CIDR you want to allocate to this VPC. Requires specifying a `ipv4IpamPoolId`.
 * `vpcId` - (Required) The ID of the VPC to make the association with.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC CIDR association
 
@@ -66,10 +66,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsVpcIpv4CidrBlockAssociation` can be imported by using the VPC CIDR Association ID, e.g.,
+Import `awsVpcIpv4CidrBlockAssociation` using the VPC CIDR Association ID. For example:
 
 ```
 $ terraform import aws_vpc_ipv4_cidr_block_association.example vpc-cidr-assoc-xxxxxxxx
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-a39926263f5a6f3d1c052cfc1b2a04362fcf69bb57a38e13acc1d402c10680a8 -->
+<!-- cache-key: cdktf-0.17.1 input-338d78387fe084808e0b6e79d2a61bc43344f8eba65dcc96b234476522ce252f -->
