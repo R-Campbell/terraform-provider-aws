@@ -33,7 +33,7 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `amazon_side_asn` - (Optional) Private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is `64512` to `65534` for 16-bit ASNs and `4200000000` to `4294967294` for 32-bit ASNs. Default value: `64512`.
 
@@ -49,9 +49,9 @@ The following arguments are supported:
 * `transit_gateway_cidr_blocks` - (Optional) One or more IPv4 or IPv6 CIDR blocks for the transit gateway. Must be a size /24 CIDR block or larger for IPv4, or a size /64 CIDR block or larger for IPv6.
 * `vpn_ecmp_support` - (Optional) Whether VPN Equal Cost Multipath Protocol support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - EC2 Transit Gateway Amazon Resource Name (ARN)
 * `association_default_route_table_id` - Identifier of the default association route table
@@ -70,10 +70,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`aws_ec2_transit_gateway` can be imported by using the EC2 Transit Gateway identifier, e.g.,
+Import `aws_ec2_transit_gateway` using the EC2 Transit Gateway identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway.example tgw-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-6e48757e816afbbf68b47d7e2d67bd6065154cade25b443bde58088cdd10f4a1 -->
+<!-- cache-key: cdktf-0.17.1 input-7f253f37773fc45698b4caea90974e7b496de2a779d640514a422ee9ecb3a3c4 -->

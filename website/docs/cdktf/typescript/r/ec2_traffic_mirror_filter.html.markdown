@@ -40,15 +40,15 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `description` - (Optional, Forces new resource) A description of the filter.
 * `networkServices` - (Optional) List of amazon network services that should be mirrored. Valid values: `amazonDns`.
 * `tags` - (Optional) Key-value map of resource tags. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - The ARN of the traffic mirror filter.
 * `id` - The name of the filter.
@@ -56,10 +56,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Traffic mirror filter can be imported using the `id`, e.g.,
+Import Traffic mirror filter using the `id`. For example:
 
 ```
 $ terraform import aws_ec2_traffic_mirror_filter.foo tmf-0fbb93ddf38198f64
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-b7d0c8547ea5ec647a0886aad11141c27cca1006379ac82906bc6f26a46c5898 -->
+<!-- cache-key: cdktf-0.17.1 input-74e4ef2c164f9625925caff75fe95e8ae03361a549bcb5a99fe7b86ee826e53a -->

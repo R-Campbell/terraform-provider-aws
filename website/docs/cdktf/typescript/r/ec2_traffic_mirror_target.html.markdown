@@ -48,7 +48,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `description` - (Optional, Forces new) A description of the traffic mirror session.
 * `networkInterfaceId` - (Optional, Forces new) The network interface ID that is associated with the target.
@@ -58,9 +58,9 @@ The following arguments are supported:
 
 **NOTE:** Either `networkInterfaceId` or `networkLoadBalancerArn` should be specified and both should not be specified together
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the Traffic Mirror target.
 * `tagsAll` - A map of tags assigned to the resource, including those inherited from the provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
@@ -69,10 +69,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Traffic mirror targets can be imported using the `id`, e.g.,
+Import Traffic mirror targets using the `id`. For example:
 
 ```
 $ terraform import aws_ec2_traffic_mirror_target.target tmt-0c13a005422b86606
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-992368b8db2722ef4cf35e5d727bab897b351724752b8e15f51ad89877879f51 -->
+<!-- cache-key: cdktf-0.17.1 input-395bee67be59b6bf4f381955019f48c8f20f6d9def8e2adf3239fff927523c72 -->

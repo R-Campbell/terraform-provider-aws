@@ -165,7 +165,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transitGatewayId` - (Required) EC2 Transit Gateway identifier. The EC2 Transit Gateway must have `multicastSupport` enabled.
 * `autoAcceptSharedAssociations` - (Optional) Whether to automatically accept cross-account subnet associations that are associated with the EC2 Transit Gateway Multicast Domain. Valid values: `disable`, `enable`. Default value: `disable`.
@@ -173,9 +173,9 @@ The following arguments are supported:
 * `staticSourcesSupport` - (Optional) Whether to enable support for statically configuring multicast group sources for the EC2 Transit Gateway Multicast Domain. Valid values: `disable`, `enable`. Default value: `disable`.
 * `tags` - (Optional) Key-value tags for the EC2 Transit Gateway Multicast Domain. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Multicast Domain identifier.
 * `arn` - EC2 Transit Gateway Multicast Domain Amazon Resource Name (ARN).
@@ -191,10 +191,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsEc2TransitGatewayMulticastDomain` can be imported by using the EC2 Transit Gateway Multicast Domain identifier, e.g.,
+Import `awsEc2TransitGatewayMulticastDomain` using the EC2 Transit Gateway Multicast Domain identifier. For example:
 
 ```
 terraform import aws_ec2_transit_gateway_multicast_domain.example tgw-mcast-domain-12345
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-af570cc56449ad3f3c4b5a829709b1b5977e549ce5e66e168ab6e20788f81ed8 -->
+<!-- cache-key: cdktf-0.17.1 input-d345a6823818782351046fd7c81d764ed43dc6898b7e59f71602cd74a30efc50 -->
