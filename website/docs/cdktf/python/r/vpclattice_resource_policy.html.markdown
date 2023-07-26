@@ -67,16 +67,16 @@ The following arguments are required:
 * `resource_arn` - (Required) The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.
 * `policy` - (Required) An IAM policy. The policy string in JSON must not contain newlines or blank lines.
 
-## Attributes Reference
+## Attribute Reference
 
-No additional attributes are exported.
+This resource exports no additional attributes.
 
 ## Import
 
-VPC Lattice Resource Policy can be imported using the `resource_arn`, e.g.,
+Import VPC Lattice Resource Policy using the `resource_arn`. For example:
 
 ```
 $ terraform import aws_vpclattice_resource_policy.example rft-8012925589
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-8705f976d624e9a849b81ea661f128586e01badf243ee85d7b861c4b3e680392 -->
+<!-- cache-key: cdktf-0.17.1 input-5ff7c976501be538a5b384f7ff678838d7fbeceb9c6321e13e413fadcacaeabe -->
