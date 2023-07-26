@@ -68,18 +68,18 @@ The following arguments are optional:
 * `blackhole` - (Optional) Indicates whether to drop traffic that matches the Prefix List. Defaults to `false`.
 * `transit_gateway_attachment_id` - (Optional) Identifier of EC2 Transit Gateway Attachment.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Route Table identifier and EC2 Prefix List identifier, separated by an underscore (`_`)
 
 ## Import
 
-`aws_ec2_transit_gateway_prefix_list_reference` can be imported by using the EC2 Transit Gateway Route Table identifier and EC2 Prefix List identifier, separated by an underscore (`_`), e.g.,
+Import `aws_ec2_transit_gateway_prefix_list_reference` using the EC2 Transit Gateway Route Table identifier and EC2 Prefix List identifier, separated by an underscore (`_`). For example:
 
 ```console
 $ terraform import aws_ec2_transit_gateway_prefix_list_reference.example tgw-rtb-12345678_pl-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-dae2b5290418a326474491e4cd679453c7c96892eefcda91996a5bc3e7297a8d -->
+<!-- cache-key: cdktf-0.17.1 input-f6d7bebd9ce4026c9ff2a23e5604ed095de832202e1b263df59bb2bccb3479d2 -->

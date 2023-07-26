@@ -41,15 +41,15 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transitGatewayAttachmentId` - (Required) Identifier of EC2 Transit Gateway Attachment.
 * `transitGatewayRouteTableId` - (Required) Identifier of EC2 Transit Gateway Route Table.
 * `replaceExistingAssociation` - (Optional) Boolean whether the Gateway Attachment should remove any current Route Table association before associating with the specified Route Table. Default value: `false`. This argument is intended for use with EC2 Transit Gateways shared into the current account, otherwise the `transitGatewayDefaultRouteTableAssociation` argument of the `awsEc2TransitGatewayVpcAttachment` resource should be used.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Route Table identifier combined with EC2 Transit Gateway Attachment identifier
 * `resourceId` - Identifier of the resource
@@ -57,10 +57,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsEc2TransitGatewayRouteTableAssociation` can be imported by using the EC2 Transit Gateway Route Table identifier, an underscore, and the EC2 Transit Gateway Attachment identifier, e.g.,
+Import `awsEc2TransitGatewayRouteTableAssociation` using the EC2 Transit Gateway Route Table identifier, an underscore, and the EC2 Transit Gateway Attachment identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_route_table_association.example tgw-rtb-12345678_tgw-attach-87654321
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-2bd51ddf92b136d784bc3eefac88b269283357b8042887989397466b3b049cd6 -->
+<!-- cache-key: cdktf-0.17.1 input-e2641e3fedd02186e953b274060493cbe3b8ad9e8efe9fe26ebc6ddd2c6d231e -->
