@@ -255,7 +255,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `ami` - (Optional) AMI to use for the instance. Required unless `launchTemplate` is specified and the Launch Template specifes an AMI. If an AMI is specified in the Launch Template, setting `ami` will override the AMI specified in the Launch Template.
 * `associatePublicIpAddress` - (Optional) Whether to associate a public IP address with an instance in a VPC.
@@ -479,9 +479,9 @@ The `launchTemplate` block supports the following:
 * `name` - Name of the launch template. Conflicts with `id`.
 * `version` - Template version. Can be a specific version number, `$latest` or `$default`. The default value is `$default`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - ARN of the instance.
 * `capacityReservationSpecification` - Capacity reservation specification of the instance.
@@ -518,10 +518,10 @@ For `instanceMarketOptions`, in addition to the arguments above, the following a
 
 ## Import
 
-Instances can be imported using the `id`, e.g.,
+Import Instances using the `id`. For example:
 
 ```
 $ terraform import aws_instance.web i-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-a69e7933efb6d1284cd4598dfa33224df848cd83e41967572381b04ca2e8f3ce -->
+<!-- cache-key: cdktf-0.17.1 input-05af0a878883d51bcb01bbb9dfbd2ee4bc318d5feac25f8ffe06f80f8335c17b -->

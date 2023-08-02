@@ -50,13 +50,13 @@ class MyConvertedCode(TerraformStack):
 * `function_version` - (Required) Lambda function version for which you are creating the alias. Pattern: `(\$LATEST|[0-9]+)`.
 * `routing_config` - (Optional) The Lambda alias' route configuration settings. Fields documented below
 
-For **routing_config** the following attributes are supported:
+`routing_config` supports the following arguments:
 
 * `additional_version_weights` - (Optional) A map that defines the proportion of events that should be sent to different versions of a lambda function.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - The Amazon Resource Name (ARN) identifying your Lambda function alias.
 * `invoke_arn` - The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws_api_gateway_integration`](/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
@@ -67,10 +67,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Lambda Function Aliases can be imported using the `function_name/alias`, e.g.,
+Import Lambda Function Aliases using the `function_name/alias`. For example:
 
 ```
 $ terraform import aws_lambda_alias.test_lambda_alias my_test_lambda_function/my_alias
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-5f8414d230ffca17ab8efb41ffca818b8267e5864b63c9c93d75fa8d938b42f1 -->
+<!-- cache-key: cdktf-0.17.1 input-899f1b09014d9e2b2be6c17698485a5e1c599cfe829603ac7f9ae1e9d3b1ffd2 -->
