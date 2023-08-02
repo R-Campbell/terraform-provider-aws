@@ -328,13 +328,13 @@ class MyConvertedCode extends TerraformStack {
 [2]: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html
 [3]: https://docs.aws.amazon.com/lambda/latest/dg/urls-auth.html
 
-## Attributes Reference
+## Attribute Reference
 
-No additional attributes are exported.
+This resource exports no additional attributes.
 
 ## Import
 
-Lambda permission statements can be imported using function_name/statement_id, with an optional qualifier, e.g.,
+Import Lambda permission statements using function_name/statement_id, with an optional qualifier. For example:
 
 ```
 $ terraform import aws_lambda_permission.test_lambda_permission my_test_lambda_function/AllowExecutionFromCloudWatch
@@ -342,4 +342,4 @@ $ terraform import aws_lambda_permission.test_lambda_permission my_test_lambda_f
 $ terraform import aws_lambda_permission.test_lambda_permission my_test_lambda_function:qualifier_name/AllowExecutionFromCloudWatch
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-8c55c49bacd38afd2e1a1f596fde0279823ddb60bae47c7ed4a6fe0c6b9ebaad -->
+<!-- cache-key: cdktf-0.17.1 input-6774f4e984773bec2fc44d83ace91714b1cb318658f78970d6d272c8b5aade75 -->
