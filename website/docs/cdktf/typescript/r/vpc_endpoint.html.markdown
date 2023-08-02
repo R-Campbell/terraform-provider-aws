@@ -187,7 +187,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `serviceName` - (Required) The service name. For AWS services the service name is usually in the form `comAmazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `awsSagemaker.<region>Notebook`).
 * `vpcId` - (Required) The ID of the VPC in which the endpoint will be used.
@@ -217,9 +217,9 @@ If no security groups are specified, the VPC's [default security group](https://
 - `update` - (Default `10M`)
 - `delete` - (Default `10M`)
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC endpoint.
 * `arn` - The Amazon Resource Name (ARN) of the VPC endpoint.
@@ -239,10 +239,10 @@ DNS blocks (for `dnsEntry`) support the following attributes:
 
 ## Import
 
-VPC Endpoints can be imported using the `vpc endpoint id`, e.g.,
+Import VPC Endpoints using the `vpc endpoint id`. For example:
 
 ```
 $ terraform import aws_vpc_endpoint.endpoint1 vpce-3ecf2a57
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-881682753c7f4bba53d750ab515083f05a7ebaa77a8ca5024446a629a9b83d3e -->
+<!-- cache-key: cdktf-0.17.1 input-ad4cda4e398a06812d0a1d0cb798f09dbbfdcdc95acf5adf2d72bed29373703d -->
