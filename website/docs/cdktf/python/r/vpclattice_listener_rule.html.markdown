@@ -163,9 +163,9 @@ path match match (`match`) supports the following:
 * `exact` - (Optional) Specifies an exact type match.
 * `prefix` - (Optional) Specifies a prefix type match. Matches the value with the prefix.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - ARN of the target group.
 * `rule_id` - Unique identifier for the target group.
@@ -181,10 +181,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-VPC Lattice Listener Rule can be imported using the `example_id_arg`, e.g.,
+Import VPC Lattice Listener Rule using the `example_id_arg`. For example:
 
 ```
 $ terraform import aws_vpclattice_listener_rule.example rft-8012925589
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-df7fcfdf085dfe5eb99f2bda32b1f06ce5aa0d098fab9d2b7c61de5c1d7f1f3d -->
+<!-- cache-key: cdktf-0.17.1 input-a7b8db53b62dc67e00cbc184e230ae353d4ec7a0b2e6acab0175bd5abc37d1d3 -->
