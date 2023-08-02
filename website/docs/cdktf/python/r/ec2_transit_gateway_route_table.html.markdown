@@ -33,14 +33,14 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transit_gateway_id` - (Required) Identifier of EC2 Transit Gateway.
 * `tags` - (Optional) Key-value tags for the EC2 Transit Gateway Route Table. If configured with a provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - EC2 Transit Gateway Route Table Amazon Resource Name (ARN).
 * `default_association_route_table` - Boolean whether this is the default association route table for the EC2 Transit Gateway.
@@ -50,10 +50,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`aws_ec2_transit_gateway_route_table` can be imported by using the EC2 Transit Gateway Route Table identifier, e.g.,
+Import `aws_ec2_transit_gateway_route_table` using the EC2 Transit Gateway Route Table identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_route_table.example tgw-rtb-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-092be375f2f09f63bf27cf8ba5f401de29a29a0e18c98e42df9a11ae41925104 -->
+<!-- cache-key: cdktf-0.17.1 input-7f98a6fa975c8b3f3b362922b7eae60e99634230b58223ecc16057d1d5195d1a -->
