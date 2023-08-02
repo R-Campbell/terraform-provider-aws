@@ -35,14 +35,14 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `client_vpn_endpoint_id` - (Required) The ID of the Client VPN endpoint.
 * `subnet_id` - (Required) The ID of the subnet to associate with the Client VPN endpoint.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The unique ID of the target network association.
 * `association_id` - The unique ID of the target network association.
@@ -57,10 +57,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-AWS Client VPN network associations can be imported using the endpoint ID and the association ID. Values are separated by a `,`.
+Import AWS Client VPN network associations using the endpoint ID and the association ID. Values are separated by a `,`. For example:
 
 ```
 $ terraform import aws_ec2_client_vpn_network_association.example cvpn-endpoint-0ac3a1abbccddd666,vpn-assoc-0b8db902465d069ad
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-4ee204844cf9a14e05461614c35d00163e0b5a2f0e0659277881ae5c05e91db9 -->
+<!-- cache-key: cdktf-0.17.1 input-d38e10b5f6cefc4b1551a6ea4f949483a2e942416365cfa7469615e1b68f982a -->
