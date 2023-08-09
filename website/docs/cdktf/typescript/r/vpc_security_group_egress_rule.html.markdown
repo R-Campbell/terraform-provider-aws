@@ -38,7 +38,7 @@ class MyConvertedCode extends TerraformStack {
       fromPort: 80,
       ipProtocol: "tcp",
       securityGroupId: Token.asString(awsSecurityGroupExample.id),
-      toPort: 8080,
+      toPort: 80,
     });
   }
 }
@@ -47,7 +47,9 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+~> **Note** Although `cidrIpv4`, `cidrIpv6`, `prefixListId`, and `referencedSecurityGroupId` are all marked as optional, you *must* provide one of them in order to configure the destination of the traffic. The `fromPort` and `toPort` arguments are required unless `ipProtocol` is set to `1` or `icmpv6`.
+
+This argument supports the following arguments:
 
 * `cidrIpv4` - (Optional) The destination IPv4 CIDR range.
 * `cidrIpv6` - (Optional) The destination IPv6 CIDR range.
@@ -60,9 +62,9 @@ The following arguments are supported:
 * `tags` - (Optional) A map of tags to assign to the resource. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 * `toPort` - (Optional) The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - The Amazon Resource Name (ARN) of the security group rule.
 * `securityGroupRuleId` - The ID of the security group rule.
@@ -70,10 +72,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Security group egress rules can be imported using the `securityGroupRuleId`, e.g.,
+Import Security group egress rules using the `securityGroupRuleId`. For example:
 
 ```
 $ terraform import aws_vpc_security_group_egress_rule.example sgr-02108b27edd666983
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-63f5a99a612ce300ed059f5dfd9babf293113f59a7ac2396179b3635b3ca3174 -->
+<!-- cache-key: cdktf-0.17.1 input-a519631c7971425970e27d955b9efc40ad23063e3ec9819f9e7ff14c23e0a8ad -->
