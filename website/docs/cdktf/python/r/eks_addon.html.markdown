@@ -217,9 +217,9 @@ The following arguments are optional:
   for service accounts on your cluster](https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html)
   in the Amazon EKS User Guide.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - Amazon Resource Name (ARN) of the EKS add-on.
 * `id` - EKS Cluster name and EKS Addon name separated by a colon (`:`).
@@ -238,10 +238,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-EKS add-on can be imported using the `cluster_name` and `addon_name` separated by a colon (`:`), e.g.,
+Import EKS add-on using the `cluster_name` and `addon_name` separated by a colon (`:`). For example:
 
 ```
 $ terraform import aws_eks_addon.my_eks_addon my_cluster_name:my_addon_name
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-65cb4aa5e5e61b4ef45c7bef10e95b45fd90067d359b3e8af6dff69c990e2aac -->
+<!-- cache-key: cdktf-0.17.1 input-cc808bc7cd6a832382b38fc07ce27acccf97e6fb887587070697fc9d170a8de5 -->
