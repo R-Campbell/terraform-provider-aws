@@ -111,7 +111,7 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `cidr` - (Optional) The CIDR you want to assign to the pool.
 * `description` - (Optional) The description for the allocation.
@@ -119,9 +119,9 @@ The following arguments are supported:
 * `ipam_pool_id` - (Required) The ID of the pool to which you want to assign a CIDR.
 * `netmask_length` - (Optional) The netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: `0-128`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the allocation.
 * `resource_id` - The ID of the resource.
@@ -130,10 +130,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-IPAM allocations can be imported using the `allocation id` and `pool id`, separated by `_`, e.g.
+Import IPAM allocations using the `allocation id` and `pool id`, separated by `_`. For example:
 
 ```
 $ terraform import aws_vpc_ipam_pool_cidr_allocation.example ipam-pool-alloc-0dc6d196509c049ba8b549ff99f639736_ipam-pool-07cfb559e0921fcbe
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-981d7f2fe0d6c10cc1bc728547ea5453ba11d5b2233abf71390c2c153bca9d78 -->
+<!-- cache-key: cdktf-0.17.1 input-18d223ab962a39213a0aa5483dfc5576e1c51b93a548edcdca49d60a78f88d5e -->
