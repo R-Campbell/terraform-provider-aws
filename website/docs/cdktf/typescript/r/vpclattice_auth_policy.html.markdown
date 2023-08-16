@@ -73,9 +73,9 @@ The following arguments are required:
 * `resourceIdentifier` - (Required) The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.
 * `policy` - (Required) The auth policy. The policy string in JSON must not contain newlines or blank lines.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `policy` - The auth policy. The policy string in JSON must not contain newlines or blank lines.
 * `state` - The state of the auth policy. The auth policy is only active when the auth type is set to AWS_IAM. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client's IAM policy. If the Auth type is NONE, then, any auth policy you provide will remain inactive.
@@ -90,10 +90,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-VPC Lattice Auth Policy can be imported using the `exampleIdArg`, e.g.,
+Import VPC Lattice Auth Policy using the `exampleIdArg`. For example:
 
 ```
 $ terraform import aws_vpclattice_auth_policy.example rft-8012925589
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-97f1ddcc6d539bd9cc8fdb132ef69de42a0b35ac7e00b27c05b04d792fb50fc3 -->
+<!-- cache-key: cdktf-0.17.1 input-619272dc3899ae2632f358128f299fdc59f26baf67abf2ac84613c1b245525f7 -->
