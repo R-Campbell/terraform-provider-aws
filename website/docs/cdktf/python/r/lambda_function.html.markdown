@@ -74,7 +74,7 @@ class MyConvertedCode(TerraformStack):
             function_name="lambda_function_name",
             handler="index.test",
             role=iam_for_lambda.arn,
-            runtime="nodejs16.x",
+            runtime="nodejs18.x",
             source_code_hash=Token.as_string(lambda_.output_base64_sha256)
         )
 ```
@@ -150,7 +150,7 @@ class MyConvertedCode(TerraformStack):
             function_name="lambda_function_name",
             handler="index.test",
             role=iam_for_lambda.arn,
-            runtime="nodejs14.x"
+            runtime="nodejs18.x"
         )
 ```
 
@@ -370,9 +370,9 @@ For network connectivity to AWS resources in a VPC, specify a list of security g
 * `security_group_ids` - (Required) List of security group IDs associated with the Lambda function.
 * `subnet_ids` - (Required) List of subnet IDs associated with the Lambda function.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - Amazon Resource Name (ARN) identifying your Lambda Function.
 * `invoke_arn` - ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws_api_gateway_integration`](/docs/providers/aws/r/api_gateway_integration.html)'s `uri`.
@@ -409,10 +409,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Lambda Functions can be imported using the `function_name`, e.g.,
+Import Lambda Functions using the `function_name`. For example:
 
 ```
 $ terraform import aws_lambda_function.test_lambda my_test_lambda_function
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-f83d1fe4cff176090ce1a1c27506e7b709b89d4b703aee61a87c906d4d71c81e -->
+<!-- cache-key: cdktf-0.17.1 input-b571a0d56d76bcec85b5759e4ff74fffa6b27c255d1af6af79c08a8bd7d18cd0 -->
