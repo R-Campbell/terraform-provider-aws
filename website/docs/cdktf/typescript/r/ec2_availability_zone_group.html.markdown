@@ -44,18 +44,18 @@ The following arguments are required:
 * `groupName` - (Required) Name of the Availability Zone Group.
 * `optInStatus` - (Required) Indicates whether to enable or disable Availability Zone Group. Valid values: `optedIn` or `notOptedIn`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - Name of the Availability Zone Group.
 
 ## Import
 
-EC2 Availability Zone Groups can be imported using the group name, e.g.,
+Import EC2 Availability Zone Groups using the group name. For example:
 
 ```
 $ terraform import aws_ec2_availability_zone_group.example us-west-2-lax-1
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-ec04450e93feebc7cdb027063eaa1b76316b185dd8882c75d29821697f953592 -->
+<!-- cache-key: cdktf-0.17.1 input-fec2895a2333b08d4eb6daf688626a6472c9fd6994efa94850e9eb9f1d142980 -->
