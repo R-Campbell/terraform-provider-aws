@@ -65,19 +65,19 @@ The following arguments are optional:
 
 * `tags` - (Optional) Key-value map of resource tags. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - Identifier of EC2 Local Gateway Route Table VPC Association.
 * `tagsAll` - A map of tags assigned to the resource, including those inherited from the provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
 
 ## Import
 
-`awsEc2LocalGatewayRouteTableVpcAssociation` can be imported by using the Local Gateway Route Table VPC Association identifier, e.g.,
+Import `awsEc2LocalGatewayRouteTableVpcAssociation` using the Local Gateway Route Table VPC Association identifier. For example:
 
 ```
 $ terraform import aws_ec2_local_gateway_route_table_vpc_association.example lgw-vpc-assoc-1234567890abcdef
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-8a5ccaa440d2879afbbcfd1fd244061ead081eec60878025f40d64bfe098b7d2 -->
+<!-- cache-key: cdktf-0.17.1 input-d001eec9bf6fafc22145cc6b6a65b1385061556b97ca9981cb656c4caa238299 -->
