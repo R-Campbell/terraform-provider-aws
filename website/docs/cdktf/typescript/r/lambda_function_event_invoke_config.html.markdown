@@ -173,15 +173,15 @@ The following arguments are required:
 
 * `destination` - (Required) Amazon Resource Name (ARN) of the destination resource. See the [Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html#invocation-async-destinations) for acceptable resource types and associated IAM permissions.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - Fully qualified Lambda Function name or Amazon Resource Name (ARN)
 
 ## Import
 
-Lambda Function Event Invoke Configs can be imported using the fully qualified Function name or Amazon Resource Name (ARN), e.g.,
+Import Lambda Function Event Invoke Configs using the fully qualified Function name or Amazon Resource Name (ARN). For example:
 
 ARN without qualifier (all versions and aliases):
 
@@ -207,4 +207,4 @@ Name with qualifier:
 $ terraform import aws_lambda_function_event_invoke_config.example my_function:production
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-e0cd91454dfb3047e2b06dc04f6f1c9e305e4fbc290bd786f97df47b73b0c205 -->
+<!-- cache-key: cdktf-0.17.1 input-eda3b898fbeceb764140d3bb145398e3fd54cb52c7f8548bc0990d5deced783a -->

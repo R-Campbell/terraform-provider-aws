@@ -76,9 +76,9 @@ The following arguments are optional:
 
 * `skipDestroy` - (Optional) Whether to retain the provisoned concurrency configuration upon destruction. Defaults to `false`. If set to `true`, the resource in simply removed from state instead.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - Lambda Function name and qualifier separated by a comma (`,`).
 
@@ -91,10 +91,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-A Lambda Provisioned Concurrency Configuration can be imported using the `functionName` and `qualifier` separated by a comma (`,`), e.g.,
+Import a Lambda Provisioned Concurrency Configuration using the `functionName` and `qualifier` separated by a comma (`,`). For example:
 
 ```
 $ terraform import aws_lambda_provisioned_concurrency_config.example my_function,production
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-2faef0ec36909d612dbc8a4a3b8d1b6d3e1f99105ec8b1690a6882051a890680 -->
+<!-- cache-key: cdktf-0.17.1 input-5f5cf2dc576882d930f5cda448e567ea9c1ae92cefd5efe750bcb868cdf86c06 -->
