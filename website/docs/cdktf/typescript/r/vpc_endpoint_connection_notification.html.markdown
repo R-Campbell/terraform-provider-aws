@@ -70,7 +70,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `vpcEndpointServiceId` - (Optional) The ID of the VPC Endpoint Service to receive notifications for.
 * `vpcEndpointId` - (Optional) The ID of the VPC Endpoint to receive notifications for.
@@ -79,9 +79,9 @@ The following arguments are supported:
 
 ~> **NOTE:** One of `vpcEndpointServiceId` or `vpcEndpointId` must be specified.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC connection notification.
 * `state` - The state of the notification.
@@ -89,10 +89,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-VPC Endpoint connection notifications can be imported using the `VPC endpoint connection notification id`, e.g.,
+Import VPC Endpoint connection notifications using the `VPC endpoint connection notification id`. For example:
 
 ```
 $ terraform import aws_vpc_endpoint_connection_notification.foo vpce-nfn-09e6ed3b4efba2263
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-e851e6352ceabdccc4e6ecf6921d065a31bf9bac271b791c0bd657c0618f1367 -->
+<!-- cache-key: cdktf-0.17.1 input-c828a6e5290f48e7abe2836acd9da5dea515a32de2e2e2d3090ea0ca97b56e7a -->
