@@ -66,9 +66,9 @@ This configuration block supports the following attributes:
 * `expose_headers` - (Optional) The HTTP headers in your function response that you want to expose to origins that call the function URL.
 * `max_age` - (Optional) The maximum amount of time, in seconds, that web browsers can cache results of a preflight request. By default, this is set to `0`, which means that the browser doesn't cache results. The maximum value is `86400`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `function_arn` - The Amazon Resource Name (ARN) of the function.
 * `function_url` - The HTTP URL endpoint for the function in the format `https://<url_id>.lambda-url.<region>.on.aws`.
@@ -76,10 +76,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Lambda function URLs can be imported using the `function_name` or `function_name/qualifier`, e.g.,
+Import Lambda function URLs using the `function_name` or `function_name/qualifier`. For example:
 
 ```
 $ terraform import aws_lambda_function_url.test_lambda_url my_test_lambda_function
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-716c263034a45294e392237fc850dee4bcf14f4ddcf3287e7d6ba8484fb3a9f9 -->
+<!-- cache-key: cdktf-0.17.1 input-04ff790a59269c64a9c813eb91609b9c095c21971e457e3739afa722e59719f2 -->
