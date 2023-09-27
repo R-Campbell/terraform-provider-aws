@@ -160,7 +160,7 @@ can be done using the [`autoAccept`](vpc_peering_connection.html#auto_accept) at
 Connection has to be made active manually using other means. See [notes](vpc_peering_connection.html#notes) below for
 more information.
 
-The following arguments are supported:
+This argument supports the following arguments:
 
 * `peerOwnerId` - (Optional) The AWS account ID of the owner of the peer VPC.
    Defaults to the account ID the [AWS provider][1] is currently connected to.
@@ -183,9 +183,9 @@ must have support for the DNS hostnames enabled. This can be done using the [`en
 * `allowRemoteVpcDnsResolution` - (Optional) Allow a local VPC to resolve public DNS hostnames to
 private IP addresses when queried from instances in the peer VPC.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC Peering Connection.
 * `acceptStatus` - The status of the VPC Peering Connection request.
@@ -207,7 +207,7 @@ or accept the connection manually using the AWS Management Console, AWS CLI, thr
 
 ## Import
 
-VPC Peering resources can be imported using the `vpc peering id`, e.g.,
+Import VPC Peering resources using the `vpc peering id`. For example:
 
 ```sh
 $ terraform import aws_vpc_peering_connection.test_connection pcx-111aaa111
@@ -215,4 +215,4 @@ $ terraform import aws_vpc_peering_connection.test_connection pcx-111aaa111
 
 [1]: /docs/providers/aws/index.html
 
-<!-- cache-key: cdktf-0.17.1 input-d26daae85d9eb60bdceb7b793299fea884d6388c58a7fb6791ca7b3367d909d9 -->
+<!-- cache-key: cdktf-0.17.1 input-0778d7a74039c345a2c23a22d7c5deb1d4dccf5b059a307ab28b67f67fc71231 -->
