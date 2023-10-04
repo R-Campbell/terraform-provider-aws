@@ -73,7 +73,7 @@ A full example of how to create a Transit Gateway in one AWS account, share it w
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `peerAccountId` - (Optional) Account ID of EC2 Transit Gateway to peer with. Defaults to the account ID the [AWS provider][1] is currently connected to.
 * `peerRegion` - (Required) Region of EC2 Transit Gateway to peer with.
@@ -81,16 +81,16 @@ The following arguments are supported:
 * `tags` - (Optional) Key-value tags for the EC2 Transit Gateway Peering Attachment. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 * `transitGatewayId` - (Required) Identifier of EC2 Transit Gateway.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Attachment identifier
 * `tagsAll` - A map of tags assigned to the resource, including those inherited from the provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
 
 ## Import
 
-`awsEc2TransitGatewayPeeringAttachment` can be imported by using the EC2 Transit Gateway Attachment identifier, e.g.,
+Import `awsEc2TransitGatewayPeeringAttachment` using the EC2 Transit Gateway Attachment identifier. For example:
 
 ```sh
 terraform import aws_ec2_transit_gateway_peering_attachment.example tgw-attach-12345678
@@ -98,4 +98,4 @@ terraform import aws_ec2_transit_gateway_peering_attachment.example tgw-attach-1
 
 [1]: /docs/providers/aws/index.html
 
-<!-- cache-key: cdktf-0.17.1 input-5e6980d31532832aa0ca35b8561fc1b7da555248123d68a53651ee6e3c1bfee2 -->
+<!-- cache-key: cdktf-0.17.1 input-dfb4dd4f2e2db16c22798d4b130efdc6a5938d8924f0749825943e4797946720 -->
