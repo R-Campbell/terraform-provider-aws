@@ -38,20 +38,20 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `enabled` - (Optional) Whether or not serial console access is enabled. Valid values are `true` or `false`. Defaults to `true`.
 
-## Attributes Reference
+## Attribute Reference
 
-No additional attributes are exported.
+This resource exports no additional attributes.
 
 ## Import
 
-Serial console access state can be imported, e.g.,
+Import serial console access state. For example:
 
 ```
 $ terraform import aws_ec2_serial_console_access.example default
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-b3550eec1a2807a26834271d28b2d03e898cca3cd2a732d5d38c79ddf71181e6 -->
+<!-- cache-key: cdktf-0.17.1 input-8e5919aabe2b14105b2a897de1aeaaccef8e81dceb08dedd2786d8862f4edd7a -->
