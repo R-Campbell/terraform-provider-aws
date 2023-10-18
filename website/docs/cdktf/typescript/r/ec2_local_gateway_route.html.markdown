@@ -48,18 +48,18 @@ The following arguments are required:
 * `localGatewayRouteTableId` - (Required) Identifier of EC2 Local Gateway Route Table.
 * `localGatewayVirtualInterfaceGroupId` - (Required) Identifier of EC2 Local Gateway Virtual Interface Group.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Local Gateway Route Table identifier and destination CIDR block separated by underscores (`_`)
 
 ## Import
 
-`awsEc2LocalGatewayRoute` can be imported by using the EC2 Local Gateway Route Table identifier and destination CIDR block separated by underscores (`_`), e.g.,
+Import `awsEc2LocalGatewayRoute` using the EC2 Local Gateway Route Table identifier and destination CIDR block separated by underscores (`_`). For example:
 
 ```
 $ terraform import aws_ec2_local_gateway_route.example lgw-rtb-12345678_172.16.0.0/16
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-1e91a283bb3d9d11b1b4699831f824ebe2b6e4d62ba4a95fea8fbf7e64228942 -->
+<!-- cache-key: cdktf-0.17.1 input-e6612c27e90864c13859988490d783fca40b95412ca5c901692d66cedd342cd2 -->
