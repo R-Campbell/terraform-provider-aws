@@ -36,7 +36,7 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `client_vpn_endpoint_id` - (Required) The ID of the Client VPN endpoint.
 * `target_network_cidr` - (Required) The IPv4 address range, in CIDR notation, of the network to which the authorization rule applies.
@@ -44,9 +44,9 @@ The following arguments are supported:
 * `authorize_all_groups` - (Optional) Indicates whether the authorization rule grants access to all clients. One of `access_group_id` or `authorize_all_groups` must be set.
 * `description` - (Optional) A brief description of the authorization rule.
 
-## Attributes Reference
+## Attribute Reference
 
-No additional attributes are exported.
+This resource exports no additional attributes.
 
 ## Timeouts
 
@@ -57,7 +57,7 @@ No additional attributes are exported.
 
 ## Import
 
-AWS Client VPN authorization rules can be imported using the endpoint ID and target network CIDR. If there is a specific group name that is included as well. All values are separated by a `,`.
+Import AWS Client VPN authorization rules using the endpoint ID and target network CIDR. If there is a specific group name that is included as well. All values are separated by a `,`. For example:
 
 ```
 $ terraform import aws_ec2_client_vpn_authorization_rule.example cvpn-endpoint-0ac3a1abbccddd666,10.1.0.0/24
@@ -67,4 +67,4 @@ $ terraform import aws_ec2_client_vpn_authorization_rule.example cvpn-endpoint-0
 $ terraform import aws_ec2_client_vpn_authorization_rule.example cvpn-endpoint-0ac3a1abbccddd666,10.1.0.0/24,team-a
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-8993bda934e1c0dafea15ed7286e6454dd951b4e5ba094c102f6feb9fa0f98e0 -->
+<!-- cache-key: cdktf-0.17.1 input-b2a299f4bf923f5cf478207e71d6142922807e5b6379bf54017d7b6b2b68e627 -->
