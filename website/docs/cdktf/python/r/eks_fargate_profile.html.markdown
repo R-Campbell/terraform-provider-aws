@@ -98,9 +98,9 @@ The following arguments are optional:
 
 * `labels` - (Optional) Key-value map of Kubernetes labels for selection.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - Amazon Resource Name (ARN) of the EKS Fargate Profile.
 * `id` - EKS Cluster name and EKS Fargate Profile name separated by a colon (`:`).
@@ -116,10 +116,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-EKS Fargate Profiles can be imported using the `cluster_name` and `fargate_profile_name` separated by a colon (`:`), e.g.,
+Import EKS Fargate Profiles using the `cluster_name` and `fargate_profile_name` separated by a colon (`:`). For example:
 
 ```
 $ terraform import aws_eks_fargate_profile.my_fargate_profile my_cluster:my_fargate_profile
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-d30b94566032f99ee0124f08aafaebec6c68a111159669a79f2ec46b163570e5 -->
+<!-- cache-key: cdktf-0.17.1 input-21d2d94f80ba79ab5f7f529657661bdadbe9b4a3d284f208f93489ec4df0b13d -->
