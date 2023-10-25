@@ -67,7 +67,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `domainName` - (Optional) the suffix domain name to use by default when resolving non Fully Qualified Domain Names. In other words, this is what ends up being the `search` value in the `/etc/resolvConf` file.
 * `domainNameServers` - (Optional) List of name servers to configure in `/etc/resolvConf`. If you want to use the default AWS nameservers you should set this to `amazonProvidedDns`.
@@ -84,9 +84,9 @@ The following arguments are supported:
 * If you delete a DHCP Options Set, all VPCs using it will be associated to AWS's `default` DHCP Option Set.
 * In most cases unless you're configuring your own DNS you'll want to set `domainNameServers` to `amazonProvidedDns`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the DHCP Options Set.
 * `arn` - The ARN of the DHCP Options Set.
@@ -98,10 +98,10 @@ official [AWS User Guide](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide
 
 ## Import
 
-VPC DHCP Options can be imported using the `dhcp options id`, e.g.,
+Import VPC DHCP Options using the `dhcp options id`. For example:
 
 ```
 $ terraform import aws_vpc_dhcp_options.my_options dopt-d9070ebb
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-139f6db09c88a55e2cb5fa59ca265c5fc5eae176fc37fa681dc570f3a067d017 -->
+<!-- cache-key: cdktf-0.17.1 input-1ba73af6c6fe8914341af45cfedaab3fd2c674e67d836f729293a713d33a5230 -->

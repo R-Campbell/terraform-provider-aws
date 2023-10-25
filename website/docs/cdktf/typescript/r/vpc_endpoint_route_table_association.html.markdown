@@ -37,24 +37,23 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `routeTableId` - (Required) Identifier of the EC2 Route Table to be associated with the VPC Endpoint.
 * `vpcEndpointId` - (Required) Identifier of the VPC Endpoint with which the EC2 Route Table will be associated.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - A hash of the EC2 Route Table and VPC Endpoint identifiers.
 
 ## Import
 
-VPC Endpoint Route Table Associations can be imported using `vpcEndpointId` together with `routeTableId`,
-e.g.,
+Import VPC Endpoint Route Table Associations using `vpcEndpointId` together with `routeTableId`. For example:
 
 ```
 $ terraform import aws_vpc_endpoint_route_table_association.example vpce-aaaaaaaa/rtb-bbbbbbbb
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-cda3ce1d04e4046d8ae4611f1d1d64b19b361edefe91a878733ad1f421b29e74 -->
+<!-- cache-key: cdktf-0.17.1 input-733ccce3d654062ce446eef32eb3f4ea489f2d014171c52c20b367de1e86af05 -->
