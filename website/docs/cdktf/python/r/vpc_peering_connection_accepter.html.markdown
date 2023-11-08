@@ -83,7 +83,7 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `vpc_peering_connection_id` - (Required) The VPC Peering Connection ID to manage.
 * `auto_accept` - (Optional) Whether or not to accept the peering request. Defaults to `false`.
@@ -97,9 +97,9 @@ by removing the corresponding `aws_vpc_peering_connection` resource from your co
 Removing a `aws_vpc_peering_connection_accepter` resource from your configuration will remove it
 from your statefile and management, **but will not destroy the VPC Peering Connection.**
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC Peering Connection.
 * `accept_status` - The status of the VPC Peering Connection request.
@@ -113,14 +113,14 @@ In addition to all arguments above, the following attributes are exported:
 (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
 * `tags_all` - A map of tags assigned to the resource, including those inherited from the provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
 
-#### Accepter and Requester Attributes Reference
+#### Accepter and Requester Attribute Reference
 
 * `allow_remote_vpc_dns_resolution` - Indicates whether a local VPC can resolve public DNS hostnames to
 private IP addresses when queried from instances in a peer VPC.
 
 ## Import
 
-VPC Peering Connection Accepters can be imported by using the Peering Connection ID, e.g.,
+Import VPC Peering Connection Accepters using the Peering Connection ID. For example:
 
 ```sh
 $ terraform import aws_vpc_peering_connection_accepter.example pcx-12345678
@@ -149,4 +149,4 @@ class MyConvertedCode(TerraformStack):
         )
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-0e973382c1a14daed2d9feea9a490b8b12227e574b67fc6ba9380f629bb44356 -->
+<!-- cache-key: cdktf-0.17.1 input-e914c4b097ff9adcfe1206767ac40e521a8b08a31c09eedb981360d88911b91f -->
