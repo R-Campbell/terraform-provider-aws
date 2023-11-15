@@ -40,18 +40,18 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
-* `protocol` - (Optional) The tunnel protocol. Valida values: `gre`. Default is `gre`.
+* `protocol` - (Optional) The tunnel protocol. Valid values: `gre`. Default is `gre`.
 * `tags` - (Optional) Key-value tags for the EC2 Transit Gateway Connect. If configured with a provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 * `transit_gateway_default_route_table_association` - (Optional) Boolean whether the Connect should be associated with the EC2 Transit Gateway association default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
 * `transit_gateway_default_route_table_propagation` - (Optional) Boolean whether the Connect should propagate routes with the EC2 Transit Gateway propagation default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
 * `transit_gateway_id` - (Required) Identifier of EC2 Transit Gateway.
 * `transport_attachment_id` - (Required) The underlaying VPC attachment
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Attachment identifier
 * `tags_all` - A map of tags assigned to the resource, including those inherited from the provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
@@ -66,10 +66,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`aws_ec2_transit_gateway_connect` can be imported by using the EC2 Transit Gateway Connect identifier, e.g.,
+Import `aws_ec2_transit_gateway_connect` using the EC2 Transit Gateway Connect identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_connect.example tgw-attach-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-f3d6047229225fad16296092d58f858cc2275ae28af2b04cb19cf33046ea88ae -->
+<!-- cache-key: cdktf-0.17.1 input-2bbca8ed42958548ca6db3783d12bb52c73a4940b17e90eae3e5fcba566448ff -->
