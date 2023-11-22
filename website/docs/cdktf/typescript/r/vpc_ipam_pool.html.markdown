@@ -100,7 +100,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `addressFamily` - (Optional) The IP protocol assigned to this pool. You must choose either IPv4 or IPv6 protocol for a pool.
 * `allocationDefaultNetmaskLength` - (Optional) A default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16 (unless you provide a different netmask value when you create the new allocation).
@@ -118,9 +118,9 @@ within the CIDR range in the pool.
 * `sourceIpamPoolId` - (Optional) The ID of the source IPAM pool. Use this argument to create a child pool within an existing pool.
 * `tags` - (Optional) A map of tags to assign to the resource. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - Amazon Resource Name (ARN) of IPAM
 * `id` - The ID of the IPAM
@@ -129,10 +129,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-IPAMs can be imported using the `ipam pool id`, e.g.
+Import IPAMs using the `ipam pool id`. For example:
 
 ```
 $ terraform import aws_vpc_ipam_pool.example ipam-pool-0958f95207d978e1e
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-d5787372983062f257a8e5f394792142607bc75ba4c6a17b285c035e19741621 -->
+<!-- cache-key: cdktf-0.17.1 input-59efb7580017e424546b05db6c75493a536d3cabbe76a0d5c61ba7114046f9be -->
