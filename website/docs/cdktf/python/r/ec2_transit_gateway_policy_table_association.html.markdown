@@ -34,14 +34,14 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transit_gateway_attachment_id` - (Required) Identifier of EC2 Transit Gateway Attachment.
 * `transit_gateway_policy_table_id` - (Required) Identifier of EC2 Transit Gateway Policy Table.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Policy Table identifier combined with EC2 Transit Gateway Attachment identifier
 * `resource_id` - Identifier of the resource
@@ -49,10 +49,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`aws_ec2_transit_gateway_policy_table_association` can be imported by using the EC2 Transit Gateway Policy Table identifier, an underscore, and the EC2 Transit Gateway Attachment identifier, e.g.,
+Import `aws_ec2_transit_gateway_policy_table_association` using the EC2 Transit Gateway Policy Table identifier, an underscore, and the EC2 Transit Gateway Attachment identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_policy_table_association.example tgw-rtb-12345678_tgw-attach-87654321
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-71380ed0eec27922255ea166a66458c5cd56cb198475d01b1f355b8ed09e3323 -->
+<!-- cache-key: cdktf-0.17.1 input-7c172dc127c8cc2481d76c6eb57f46895a2df7cc9589d02bc8e84015bd95d4b0 -->
