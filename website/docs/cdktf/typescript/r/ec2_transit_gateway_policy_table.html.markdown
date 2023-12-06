@@ -39,14 +39,14 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transitGatewayId` - (Required) EC2 Transit Gateway identifier.
 * `tags` - (Optional) Key-value tags for the EC2 Transit Gateway Policy Table. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - EC2 Transit Gateway Policy Table Amazon Resource Name (ARN).
 * `id` - EC2 Transit Gateway Policy Table identifier.
@@ -55,10 +55,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsEc2TransitGatewayPolicyTable` can be imported by using the EC2 Transit Gateway Policy Table identifier, e.g.,
+Import `awsEc2TransitGatewayPolicyTable` using the EC2 Transit Gateway Policy Table identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_policy_table.example tgw-rtb-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-6200610860d8045f7e9f0172434a88391558b460f129907e25f4790f7bb77806 -->
+<!-- cache-key: cdktf-0.17.1 input-e1bb7700d8c289fbec6b31dc4c2a81424ff29b0a497e35b2a7bfcd8d16a18a9f -->
