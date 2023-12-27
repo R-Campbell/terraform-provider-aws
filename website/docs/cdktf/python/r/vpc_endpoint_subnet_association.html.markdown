@@ -42,14 +42,14 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `vpc_endpoint_id` - (Required) The ID of the VPC endpoint with which the subnet will be associated.
 * `subnet_id` - (Required) The ID of the subnet to be associated with the VPC endpoint.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the association.
 
@@ -62,11 +62,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-VPC Endpoint Subnet Associations can be imported using `vpc_endpoint_id` together with `subnet_id`,
-e.g.,
+Import VPC Endpoint Subnet Associations using `vpc_endpoint_id` together with `subnet_id`. For example:
 
 ```
 $ terraform import aws_vpc_endpoint_subnet_association.example vpce-aaaaaaaa/subnet-bbbbbbbbbbbbbbbbb
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-650992d61a270b5eff0edcd58e54247cd24d2eec19f5a8578dc025249b569472 -->
+<!-- cache-key: cdktf-0.17.1 input-a09b89a201ffd092387ceee82c6ef3dbe682dedfca443f75893519b0475f2c6f -->
