@@ -43,14 +43,14 @@ A full example of how to create a Transit Gateway in one AWS account, share it w
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transitGatewayAttachmentId` - (Required) The ID of the EC2 Transit Gateway Peering Attachment to manage.
 * `tags` - (Optional) Key-value tags for the EC2 Transit Gateway Peering Attachment. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Attachment identifier
 * `transitGatewayId` - Identifier of EC2 Transit Gateway.
@@ -60,10 +60,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsEc2TransitGatewayPeeringAttachmentAccepter` can be imported by using the EC2 Transit Gateway Attachment identifier, e.g.,
+Import `awsEc2TransitGatewayPeeringAttachmentAccepter` using the EC2 Transit Gateway Attachment identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_peering_attachment_accepter.example tgw-attach-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-fab6deae8f43bceb887eb6da8d66bf91ec6984a573d451705f72d107809f5a68 -->
+<!-- cache-key: cdktf-0.17.1 input-4f23e9ee64d677f8d4525e222c9b00adc38444cdd4db8a26de9a36a4aa400017 -->
