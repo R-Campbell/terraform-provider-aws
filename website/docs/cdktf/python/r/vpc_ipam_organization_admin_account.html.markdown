@@ -43,13 +43,13 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `delegated_admin_account_id` - (Required)
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - The Organizations ARN for the delegate account.
 * `id` - The Organizations member account ID that you want to enable as the IPAM account.
@@ -59,10 +59,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-IPAMs can be imported using the `delegate account id`, e.g.
+Import IPAMs using the `delegate account id`. For example:
 
 ```
 $ terraform import aws_vpc_ipam_organization_admin_account.example 12345678901
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-34a7f83117723db36e656cf811268ab323f63a25f974deaf46d110c642460997 -->
+<!-- cache-key: cdktf-0.17.1 input-616dfdc1f075a8f59d38ea007c09b5d98776f89bd8cc1c726676e4dd6992d106 -->
