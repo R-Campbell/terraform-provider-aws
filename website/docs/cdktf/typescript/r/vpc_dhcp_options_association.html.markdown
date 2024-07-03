@@ -37,7 +37,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `vpcId` - (Required) The ID of the VPC to which we would like to associate a DHCP Options Set.
 * `dhcpOptionsId` - (Required) The ID of the DHCP Options Set to associate to the VPC.
@@ -47,18 +47,18 @@ The following arguments are supported:
 * You can only associate one DHCP Options Set to a given VPC ID.
 * Removing the DHCP Options Association automatically sets AWS's `default` DHCP Options Set to the VPC.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the DHCP Options Set Association.
 
 ## Import
 
-DHCP associations can be imported by providing the VPC ID associated with the options:
+Import DHCP associations using the VPC ID associated with the options. For example:
 
 ```
 $ terraform import aws_vpc_dhcp_options_association.imported vpc-0f001273ec18911b1
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-a700e608592d667c741c37ae143b6b79c2e9d2b180f00f29a4c08f8fd7c60bb6 -->
+<!-- cache-key: cdktf-0.17.1 input-f73d1a78cbe490540273c1d15a02845db1b06077dd9d18e424fc649827d056ab -->
