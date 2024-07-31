@@ -50,7 +50,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `authenticationOptions` - (Required) Information about the authentication method to be used to authenticate clients.
 * `clientCidrBlock` - (Required) The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
@@ -97,9 +97,9 @@ One of the following arguments must be supplied:
 * `cloudwatchLogStream` - (Optional) The name of the CloudWatch Logs log stream to which the connection data is published.
 * `enabled` - (Required) Indicates whether connection logging is enabled.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - The ARN of the Client VPN endpoint.
 * `dnsName` - The DNS name to be used by clients when establishing their VPN session.
@@ -108,10 +108,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-AWS Client VPN endpoints can be imported using the `id` value found via `aws ec2 describe-client-vpn-endpoints`, e.g.,
+Import AWS Client VPN endpoints using the `id` value found via `aws ec2 describe-client-vpn-endpoints`. For example:
 
 ```
 $ terraform import aws_ec2_client_vpn_endpoint.example cvpn-endpoint-0ac3a1abbccddd666
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-a26501efa4c7174b2c2cb5dadf20d0288919ea642f95616bb9aaec5a718b6122 -->
+<!-- cache-key: cdktf-0.17.1 input-b11931a97c836ccf831b55b0593f5a3983ea67ee0dc7c399c3a555827e20c421 -->
