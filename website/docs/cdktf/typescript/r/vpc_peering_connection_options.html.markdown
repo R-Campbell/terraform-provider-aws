@@ -167,7 +167,7 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `vpcPeeringConnectionId` - (Required) The ID of the requester VPC peering connection.
 * `accepter` (Optional) - An optional configuration block that allows for [VPC Peering Connection](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that acceptsthe peering connection (a maximum of one).
@@ -179,18 +179,18 @@ The following arguments are supported:
 
 * `allowRemoteVpcDnsResolution` - (Optional) Allow a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The ID of the VPC Peering Connection Options.
 
 ## Import
 
-VPC Peering Connection Options can be imported using the `vpc peering id`, e.g.,
+Import VPC Peering Connection Options using the `vpc peering id`. For example:
 
 ```
 $ terraform import aws_vpc_peering_connection_options.foo pcx-111aaa111
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-37b2766ef152940087dbd5fc15a4eeba36ebf1a534c2d80aad205074fa58ebb5 -->
+<!-- cache-key: cdktf-0.17.1 input-61696f0f8bc0c8e0f18a1f6e0adbd19ee0768f71b0bb30b2b296b2ccb9246705 -->
