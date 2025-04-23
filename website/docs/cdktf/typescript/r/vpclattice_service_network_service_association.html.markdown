@@ -49,9 +49,9 @@ The following arguments are optional:
 
 * `tags` - (Optional) Key-value mapping of resource tags. If configured with a provider [`defaultTags` configuration block](/docs/providers/aws/index.html#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - The ARN of the Association.
 * `createdBy` - The account that created the association.
@@ -72,10 +72,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-VPC Lattice Service Network Service Association can be imported using the `id`, e.g.,
+Import VPC Lattice Service Network Service Association using the `id`. For example:
 
 ```
 $ terraform import aws_vpclattice_service_network_service_association.example snsa-05e2474658a88f6ba
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-3769a37663815673bd10fa4bfafd293b5a7b40f20b758d34dc1ea5546cc2a40b -->
+<!-- cache-key: cdktf-0.17.1 input-4cf0764cc3b8b7ee3d4a1e431ac43c8a2671c2ec54c2b07541cdb313a61ec226 -->
