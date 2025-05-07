@@ -40,7 +40,7 @@ A full example of how to create a Transit Gateway in one AWS account, share it w
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `subnetIds` - (Required) Identifiers of EC2 Subnets.
 * `transitGatewayId` - (Required) Identifier of EC2 Transit Gateway.
@@ -52,9 +52,9 @@ The following arguments are supported:
 * `transitGatewayDefaultRouteTableAssociation` - (Optional) Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
 * `transitGatewayDefaultRouteTablePropagation` - (Optional) Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Attachment identifier
 * `tagsAll` - A map of tags assigned to the resource, including those inherited from the provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
@@ -62,10 +62,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsEc2TransitGatewayVpcAttachment` can be imported by using the EC2 Transit Gateway Attachment identifier, e.g.,
+Import `awsEc2TransitGatewayVpcAttachment` using the EC2 Transit Gateway Attachment identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_vpc_attachment.example tgw-attach-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-542104b0b8b14cf70d217cb89d2940711fa38ea1e89aed4d0f46c3315423c656 -->
+<!-- cache-key: cdktf-0.17.1 input-b857047a2b817cce355a09d40f3633df9fe25930e6659d81b91f1f90eb2ff8be -->
