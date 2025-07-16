@@ -36,7 +36,7 @@ class MyConvertedCode(TerraformStack):
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `availability_zone` - (Required) The Availability Zone in which to create the Capacity Reservation.
 * `ebs_optimized` - (Optional) Indicates whether the Capacity Reservation supports EBS-optimized instances.
@@ -52,9 +52,9 @@ The following arguments are supported:
 * `tags` - (Optional) A map of tags to assign to the resource. If configured with a provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 * `tenancy` - (Optional) Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - The Capacity Reservation ID.
 * `owner_id` - The ID of the AWS account that owns the Capacity Reservation.
@@ -63,10 +63,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Capacity Reservations can be imported using the `id`, e.g.,
+Import Capacity Reservations using the `id`. For example:
 
 ```
 $ terraform import aws_ec2_capacity_reservation.web cr-0123456789abcdef0
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-5de72e0a8199275fad3ad56e38ae6035b7b1ce0b96844b6338e061c1672a9bd9 -->
+<!-- cache-key: cdktf-0.17.1 input-5cc50ae92bd8e5244e6bd085b2f1af9f49938a770f76bd39316f81ebe264afc1 -->
