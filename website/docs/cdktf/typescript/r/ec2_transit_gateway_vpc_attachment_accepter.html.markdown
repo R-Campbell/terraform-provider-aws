@@ -49,16 +49,16 @@ A full example of how to create a Transit Gateway in one AWS account, share it w
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transitGatewayAttachmentId` - (Required) The ID of the EC2 Transit Gateway Attachment to manage.
 * `transitGatewayDefaultRouteTableAssociation` - (Optional) Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. Default value: `true`.
 * `transitGatewayDefaultRouteTablePropagation` - (Optional) Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table. Default value: `true`.
 * `tags` - (Optional) Key-value tags for the EC2 Transit Gateway VPC Attachment. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Attachment identifier
 * `tagsAll` - A map of tags assigned to the resource, including those inherited from the provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
@@ -72,10 +72,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsEc2TransitGatewayVpcAttachmentAccepter` can be imported by using the EC2 Transit Gateway Attachment identifier, e.g.,
+Import `awsEc2TransitGatewayVpcAttachmentAccepter` using the EC2 Transit Gateway Attachment identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_vpc_attachment_accepter.example tgw-attach-12345678
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-232f5fcd8a6ad2c2a3f3e13403cef004626b48c5673a3cce15a3172b9006d2c5 -->
+<!-- cache-key: cdktf-0.17.1 input-5e65eb9931b51ba700d4b7f74f04d900b0c2027dad82967fa1a9c026e11ce6ea -->

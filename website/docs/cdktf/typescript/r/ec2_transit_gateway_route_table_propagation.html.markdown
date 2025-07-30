@@ -41,14 +41,14 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `transitGatewayAttachmentId` - (Required) Identifier of EC2 Transit Gateway Attachment.
 * `transitGatewayRouteTableId` - (Required) Identifier of EC2 Transit Gateway Route Table.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 Transit Gateway Route Table identifier combined with EC2 Transit Gateway Attachment identifier
 * `resourceId` - Identifier of the resource
@@ -56,10 +56,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`awsEc2TransitGatewayRouteTablePropagation` can be imported by using the EC2 Transit Gateway Route Table identifier, an underscore, and the EC2 Transit Gateway Attachment identifier, e.g.,
+Import `awsEc2TransitGatewayRouteTablePropagation` using the EC2 Transit Gateway Route Table identifier, an underscore, and the EC2 Transit Gateway Attachment identifier. For example:
 
 ```
 $ terraform import aws_ec2_transit_gateway_route_table_propagation.example tgw-rtb-12345678_tgw-attach-87654321
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-3f7fc604735b965a0bdab490984fe7efcec8e99742613ec9237376463dd81611 -->
+<!-- cache-key: cdktf-0.17.1 input-ea22c10244be072d51c2e69a420c76840f2c9b7fbb1cef0f4daef1e2144b256c -->
