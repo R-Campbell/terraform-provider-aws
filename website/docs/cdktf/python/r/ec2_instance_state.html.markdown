@@ -68,9 +68,9 @@ The following arguments are optional:
 
 * `force` - (Optional) Whether to request a forced stop when `state` is `stopped`. Otherwise (_i.e._, `state` is `running`), ignored. When an instance is forced to stop, it does not flush file system caches or file system metadata, and you must subsequently perform file system check and repair. Not recommended for Windows instances. Defaults to `false`.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - ID of the instance (matches `instance_id`).
 
@@ -84,10 +84,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-`aws_ec2_instance_state` can be imported by using the `instance_id` attribute, e.g.,
+Import `aws_ec2_instance_state` using the `instance_id` attribute. For example:
 
 ```
 $ terraform import aws_ec2_instance_state.test i-02cae6557dfcf2f96
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-19c105887b99c9546865f82e4635edb9590d1b4933fa7a3973baeb84dbc5ce9c -->
+<!-- cache-key: cdktf-0.17.1 input-e86c5b9a19d16bc62a29a74abe6cc7585db12db6e8426a3fdba6efb8f02939c3 -->
