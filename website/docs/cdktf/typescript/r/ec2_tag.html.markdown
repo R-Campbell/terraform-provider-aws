@@ -68,24 +68,24 @@ class MyConvertedCode extends TerraformStack {
 
 ## Argument Reference
 
-The following arguments are supported:
+This resource supports the following arguments:
 
 * `resourceId` - (Required) The ID of the EC2 resource to manage the tag for.
 * `key` - (Required) The tag name.
 * `value` - (Required) The value of the tag.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `id` - EC2 resource identifier and key, separated by a comma (`,`)
 
 ## Import
 
-`awsEc2Tag` can be imported by using the EC2 resource identifier and key, separated by a comma (`,`), e.g.,
+Import `awsEc2Tag` using the EC2 resource identifier and key, separated by a comma (`,`). For example:
 
 ```
 $ terraform import aws_ec2_tag.example tgw-attach-1234567890abcdef,Name
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-a019f483855232814dd71801911c02977a3e810c118efe8f2670f5db055f687e -->
+<!-- cache-key: cdktf-0.17.1 input-250d951e793c3234e458d9a9305e6f5288f885178bd296e2390bfd823d3bc603 -->
