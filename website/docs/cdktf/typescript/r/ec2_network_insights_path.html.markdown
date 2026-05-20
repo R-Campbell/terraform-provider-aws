@@ -51,9 +51,9 @@ The following arguments are optional:
 * `destinationPort` - (Optional) Destination port to analyze access to.
 * `tags` - (Optional) Map of tags to assign to the resource. If configured with a provider [`defaultTags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 
-## Attributes Reference
+## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+This resource exports the following attributes in addition to the arguments above:
 
 * `arn` - ARN of the Network Insights Path.
 * `id` - ID of the Network Insights Path.
@@ -61,10 +61,10 @@ In addition to all arguments above, the following attributes are exported:
 
 ## Import
 
-Network Insights Paths can be imported using the `id`, e.g.,
+Import Network Insights Paths using the `id`. For example:
 
 ```
 $ terraform import aws_ec2_network_insights_path.test nip-00edfba169923aefd
 ```
 
-<!-- cache-key: cdktf-0.17.1 input-c926a6193628df8930deeb3e316583f9163e2d4f39989879768b5c0502ec2bc5 -->
+<!-- cache-key: cdktf-0.17.1 input-36a5cdd1ddf920c32698c8121bebf98ed107232e9702aa494f81e10c23e83fd0 -->
